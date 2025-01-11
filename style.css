@@ -134,18 +134,60 @@ h1 {
     max-width: 100%;
     height: auto;
     margin-top: 2rem;
+    display: none;
 }
 
 button:disabled {
     background-color: gray;
 }
 
-@media screen and (max-width: 1250px) {
+@media screen and (max-width: 768px) {
+    .container{
+        width: 95;
+    }
+
+    h1 {
+        font-size: 28px;
+        padding: 1rem;
+    }
+
+    .container__texto {
+        margin: 1rem 0;
+    }
+
+    .container__input{
+        height: 50px;
+        font-size: 16px;
+        padding: 0.8rem;
+    }
+
+    .container_botao{
+        font-size: 18px;
+        padding: 1rem;
+    }
+
+    .texto__paragrafo {
+        font-size: 20px;
+    }
+
     .container__imagem-pessoa {
         display: none;
     }
 
-    h1 {
-        font-size: 50px;
+    .container__informacoes{
+        padding: 0.3rem;
+        gap: 1rem;
+    }
+
+    .container__imagem-pessoa {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .container__imagem-pessoa {
+        display: block;
+        max-width: 100%;
+        height: auto;
     }
 }
